@@ -2,7 +2,7 @@ import Race from './Race';
 
 class Elf extends Race {
   private _maxLifePoints: number;
-  static _createdRacesInstances = 0;
+  public static _createdRacesInstances = 0;
   
   constructor(name: string, dexterity: number) {
     Elf._createdRacesInstances += 1;
@@ -10,9 +10,11 @@ class Elf extends Race {
     this._maxLifePoints = 99;
   }
 
-  static createdRacesInstances():number { return Elf._createdRacesInstances; }
+  public static createdRacesInstances():number { 
+    return Elf._createdRacesInstances; 
+  }
 
-  get maxLifePoints():number { return this._maxLifePoints; }
+  public get maxLifePoints():number { return this._maxLifePoints; }
 }
 
 export default Elf;

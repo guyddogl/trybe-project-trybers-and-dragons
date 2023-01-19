@@ -10,9 +10,11 @@ class Orc extends Race {
     this._maxLifePoints = 74;
   }
 
-  static createdRacesInstances():number { return Orc._createdRacesInstances; }
+  public static createdRacesInstances():number { 
+    return Orc._createdRacesInstances; 
+  }
 
-  get maxLifePoints():number { return this._maxLifePoints; }
+  public get maxLifePoints():number { return this._maxLifePoints; }
 }
 
 export default Orc;
