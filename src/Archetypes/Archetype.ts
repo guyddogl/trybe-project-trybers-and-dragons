@@ -19,7 +19,7 @@ abstract class Archetype {
 
   public get cost(): number { return this._cost; }
 
-  public abstract get energyType():EnergyType;
+  public abstract get energyType(): EnergyType;
 }
 
 export default Archetype;

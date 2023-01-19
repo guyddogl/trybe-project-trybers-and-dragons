@@ -5,8 +5,8 @@ class Halfling extends Race {
   public static _createdRacesInstances = 0;
   
   constructor(name: string, dexterity: number) {
-    Halfling._createdRacesInstances += 1;
     super(name, dexterity);
+    Halfling._createdRacesInstances += 1;
     this._maxLifePoints = 60;
   }
 
