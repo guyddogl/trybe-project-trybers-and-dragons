@@ -7,17 +7,11 @@ abstract class Race {
     this._dexterity = dexterity;
   }
 
-  static createdRacesInstances(): number {
-    throw new Error('Not implemented');
-  }
+  static createdRacesInstances(): number { throw new Error('Not implemented'); }
 
-  get name(): string {
-    return this._name;
-  }
+  get name(): string { return this._name; }
 
-  get dexterity(): number {
-    return this._dexterity;
-  }
+  get dexterity(): number { return this._dexterity; }
 
   abstract get maxLifePoints():number;
 }
